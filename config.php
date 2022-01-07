@@ -2,7 +2,7 @@
 
     $dbHost = 'Localhost';
     $dbUsername = 'root';
-    $dbPassword = '17032004Vv';
+    $dbPassword = '';
     $dbName = 'monitoramento-atividades';
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
