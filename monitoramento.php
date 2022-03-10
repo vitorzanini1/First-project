@@ -1,4 +1,20 @@
 
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        include_once('config.php');
+
+        $nome_atividade = $_POST['nome'];
+        $data_inicio = $_POST['data_inicio'];
+        $hora_inicio = $_POST['hora_inicio'];
+        $data_fim = $_POST['data_fim'];
+        $hora_fim = $_POST['hora_fim'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome_atividade,data_inicio,hora_inicio,data_fim,hora_fim) 
+        VALUES ('$nome_atividade','$data_inicio','$hora_inicio','$data_fim','$hora_fim')");
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
